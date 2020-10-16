@@ -121,9 +121,28 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # 追加のエイリアス
-alias d='docker'
-alias dc='docker-compose'
-alias src='source ~/.profile'
 alias mkdir='mkdir -p'
-alias cdl='cd /mnt/c/kussy-lab'
-alias dex='docker exec -it'
+alias h="cd ~"
+alias src='source ~/.profile'
+alias cp="cp -i"
+alias mv="mv -i"
+alias find="find . -name"
+
+alias au="sudo apt update"
+alias ai="sudo apt install"
+
+alias gs="git status"
+alias gd="git diff"
+alias gaa="git add -A"
+alias gc="git commit"
+alias gco="git checkout"
+alias gm="git merge"
+alias gpl="git pull"
+alias gps="git push"
+
+alias d="docker"
+alias dps="docker ps"
+alias dc="docker-compose"
+alias dcup="docker-compose up -d"
+alias dcdn="docker-compose down"
+alias dex="docker exec -it"
