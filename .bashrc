@@ -123,6 +123,7 @@ export NVM_DIR="$HOME/.nvm"
 # 追加のエイリアス
 alias mkdir='mkdir -p'
 alias h="cd ~"
+alias c='code .'
 alias src='source ~/.profile'
 alias cp="cp -i"
 alias mv="mv -i"
@@ -134,7 +135,7 @@ alias ai="sudo apt install"
 alias gs="git status"
 alias gd="git diff"
 alias gaa="git add -A"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gco="git checkout"
 alias gm="git merge"
 alias gpl="git pull"
