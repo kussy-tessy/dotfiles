@@ -122,6 +122,10 @@ export NVM_DIR="$HOME/.nvm"
 
 # 追加のエイリアス
 alias mkdir='mkdir -p'
+function mkcd(){
+    mkdir $1;
+    cd $1;
+}
 alias h="cd ~"
 alias c='code .'
 alias src='source ~/.profile'
@@ -146,4 +150,14 @@ alias dps="docker ps"
 alias dc="docker-compose"
 alias dcup="docker-compose up -d"
 alias dcdn="docker-compose down"
+alias dcex="docker-compose exec"
 alias dex="docker exec -it"
+function drun(){
+     docker run -itd $1 /bin/sh
+}
+function dsh(){
+     docker exec -it $1 /bin/sh
+}
+function dcsh(){
+     docker-compose exec $1 /bin/sh
+} 
