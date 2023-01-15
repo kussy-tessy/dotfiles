@@ -160,4 +160,8 @@ function dsh(){
 }
 function dcsh(){
      docker-compose exec $1 /bin/sh
-} 
+}
+# 会社用
+alias kag="h && cd kag-tdb && dcup && make serve"
+alias kagnpm="h && cd kag-tdb && dcup && make npm-watch"
+alias kaglcl="cd /c/kag-tdb/kag-tdb"
